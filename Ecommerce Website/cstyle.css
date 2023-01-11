@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Open+Sans:wght@400;700&family=Poppins:wght@200&family=Roboto:wght@500&family=The+Nautigal:wght@700&display=swap');
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*body{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}*/
+.contactinfo-container{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	margin-top: 10px;
+	width:800px;
+	height: 500px;
+	background:#eee;
+	border-radius: 10px;
+	padding: 10px 20px 0px 20px;
+}
+.title h2{
+	font-size: 25px;
+	text-align: center;
+	color:blue;
+	margin-bottom: 20px;
+}
+.box{
+	display: flex;
+	justify-content:flex-start;
+	align-items: center;
+}
+.form{
+	width:600px;
+	height: auto;
+	background: #fff;
+}
+.wrapper{
+	margin:0;
+	text-align: left;
+	padding:10px 20px;
+}
+.form .wrapper h2{
+	color:blue;
+	font-size: 20px;
+	line-height: 45px;
+}
+.r1{
+	display: flex;
+	/*justify-content: space-between;*/
+	gap:20px;
+}
+.inputbox{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+	width: 50%;
+}
+.r2 .inputbox{
+	width: 100%;
+}
+.inputbox span{
+	color:#42275a;
+	margin:4px 0;
+	font-family: 'poppins',sans-serif;
+	font-size:15px;
+	font-weight: 500;
+}
+.inputbox input{
+	width: 100%;
+	height: 25px;
+	padding-left:5px;
+	color:#888;
+	outline:none;
+}
+.inputbox textarea{
+	width:100%;
+	height: 130px;
+	padding:10px 2px;
+	resize: none;
+	outline: none;
+	border:1px solid #333;
+	margin-bottom: 10px;
+}
+.inputbox input[type='submit']{
+	color:#fff;
+	background: blue;
+	border-radius: 5px;
+	border:none;
+	max-width: 120px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.map{
+	width:400px;
+	height: 400px;
+	margin:-30px 0 0 15px;
+}
+.map iframe{
+	width:100%;
+}
+@media(max-width:790px){
+	.contactinfo-container{
+		width: 500px;
+	}
+	.box .map{
+		display: none;
+	}
+	.box form{
+		display: block;
+		margin:auto;
+	}
+}
+@media(max-width:500px){
+	.contactinfo-container{
+		width: 100%;
+		height: auto;
+		margin-top: 80px;
+	}
+	.wrapper .r1{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+@media(max-width:390px){
+	.contactinfo-container{
+		width: 100%;
+		height: auto;
+		margin-top: 80px;
+	}
+	.wrapper .r1{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
